@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import RepoCard from '../repoCard/RepoCard'
+import './ReposCardContainer.css'
 
 function ReposCardContainer() {
 
@@ -15,8 +17,13 @@ function ReposCardContainer() {
         getRepos()
     }, [page])
 
+    console.log(repos)
+    repos.map(elem => console.log(elem.name))
+
     return (
-        <></>
+        <div className='container'>
+            {repos.map(elem => <RepoCard repositoryData={elem}/>)}
+        </div>
     )
 }
 

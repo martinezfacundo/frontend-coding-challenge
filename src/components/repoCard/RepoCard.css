@@ -1,0 +1,27 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    padding: 2vh 0;
+}
+
+.avatar {
+    width: 10vw;
+}
+
+.card-info-container h1 {
+    margin: 0;
+    font-size: calc(2vw + 1rem);
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.stars-box,
+.issues-box {
+    border: solid black .15vw;
+    padding: 1vh 1vw;
+}
