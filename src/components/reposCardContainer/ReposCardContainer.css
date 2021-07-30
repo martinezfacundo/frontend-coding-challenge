@@ -1,5 +1,33 @@
-.container {
+.cards-container {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+}
+
+.page-functions-container {
+    display: flex;
+    width: 95%;
+    justify-content: flex-end;
+}
+
+.page-button,
+.page-count {
+    margin: 2vh 0;
+    margin-right: 1vw;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .5vh 1vw;
+    text-transform: uppercase;
+}
+
+.page-button:hover,
+.page-count:hover {
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.no-results {
+    text-align: center;
+    text-transform: uppercase;
 }
